@@ -1,0 +1,39 @@
+$content-width: 1170px;
+$breakpoint: 799px;
+$nav-height: 70px;
+$nav-background: #262626;
+$nav-font-color: #ffffff;
+$link-hover-color: #f7b600;
+$text-font-color: #1A1F71;
+
+.home-page {
+    background: url(assets/desktop-image.jpg);
+    background-position: center 0%;
+    background-color: rgb(255, 255, 255);
+    background-size: 100% auto;
+    height: -webkit-fill-available;
+    min-height: 700px;
+
+    .main-content {
+        max-width: $content-width;
+        margin: 0 auto;
+        padding-top: 40px;
+        >p {
+            color: $text-font-color;
+            font-weight: 400;
+            font-size: 1.7em;
+        }
+        >div {
+            color: $text-font-color;
+            font-size: 3.4rem;
+            margin: 20px 0;
+        }
+        >button {
+            padding: 12px 20px;
+            font-size: 1.2rem;
+            border: 1px solid #5c5c5c;
+            color: $text-font-color;
+            font-weight: 600;
+        }
+    }
+}

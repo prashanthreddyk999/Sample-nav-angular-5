@@ -1,0 +1,43 @@
+<section class="navigation">
+    <div class="nav-container">
+      <div class="brand">
+        <a href="#!">
+                  <img src="assets/nav-logo.png">
+              </a>
+      </div>
+      <nav>
+        <div class="nav-mobile">
+          <a id="nav-toggle" href="#!"><span></span></a>
+        </div>
+        <ul class="nav-list">
+          <li (click)="activeMenus($event,1)" [ngClass]="{'isactive' : activeClass === 1}" class="pay">
+            <a routerLink="/dashboard">Pay With Visa</a>
+          </li>
+          <li (click)="activeMenus($event,2)" [ngClass]="{'isactive' : activeClass === 2}"  class="partner">
+            <a routerLink="/dashboard">Partner With Us</a>
+          </li>
+          <li (click)="activeMenus($event,3)" [ngClass]="{'isactive' : activeClass === 3}"  class="business">
+            <a routerLink="/business">Run Your Business</a>
+          </li>
+          <li (click)="activeMenus($event,4)" [ngClass]="{'isactive' : activeClass === 4}"  class="travel">
+            <a routerLink="/travel">Travel With Visa</a>
+          </li>
+          <li (click)="activeMenus($event,5)" [ngClass]="{'isactive' : activeClass === 5}"  class="everywhere">
+            <a routerLink="/travel">Visa Everywhere</a>
+          </li>
+          <li>
+            <span class="search-line"></span>
+            <button class="visa-search-icon"><a href="#!"></a></button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </section>
+  <div class="navline">
+    <div class="nav-indicator-bar">
+      <div class="nav-indicator" [ngClass]="{'isnavinactive' : activeArrow}">
+        <img src="assets/global-nav-indicator.png" alt="Navigation Indication" role="presentation">
+      </div>
+    </div>
+  </div>
+<router-outlet></router-outlet>
