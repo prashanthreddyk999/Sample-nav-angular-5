@@ -4,8 +4,11 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 #Running project 
 -Clone the project.
+
 -Install NPM(https://nodejs.org/en/download/) if they are not already on your machine.
+
 -Note: Verify that you are running at least node 6.9.x and npm 3.x.x by running node -v and npm -v in a terminal/console window.         Older versions produce errors, but newer versions are fine.
+
 -npm install
 -npm start
 
